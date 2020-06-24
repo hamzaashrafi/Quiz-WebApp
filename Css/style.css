@@ -1,0 +1,142 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #341f97;
+}
+
+.wellcome_form input,
+.wellcome_form button {
+    display: block;
+    width: 100%;
+}
+
+.wellcome_form input {
+    margin-bottom: 15px;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid white;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+}
+
+.wellcome_form button {
+    font-size: 22px;
+    padding: 20px 0;
+    border: none;
+    background-color: white;
+    border-radius: 100px;
+    color: #341f97;
+    transition: 0.4s all;
+}
+
+.wellcome_form button:hover {
+    transform: translateY(-5px);
+    cursor: pointer;
+}
+
+.wellcome_form input:focus,
+.wellcome_form button:focus {
+    outline: none;
+}
+
+.quiz {
+    width: 800px;
+    height: 500px;
+    background-color: white;
+    display: grid;
+    grid-template-rows: 60px auto;
+    border-radius: 3px;
+}
+
+.quiz_header {
+    background-color: white;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+    box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+}
+
+.quiz_body {
+    background-color: #ecf0f1;
+    padding: 30px;
+}
+
+.quiz_user {
+    display: flex;
+    align-items: center;
+    padding-left: 30px;
+}
+
+.quiz_timer {
+    display: flex;
+    align-items: center;
+    padding: 0 30px;
+    background-color: #341f97;
+    color: white;
+}
+
+.option_group {
+    list-style-type: none;
+    margin: 30px 0;
+}
+
+.option {
+    background-color: white;
+    width: 300px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-radius: 100px;
+    border: 2px solid transparent;
+}
+
+.option:hover {
+    border: 2px solid #341f97;
+    color: #341f97;
+    cursor: pointer;
+}
+
+.bnt_next {
+    background-color: #341f97;
+    color: white;
+    padding: 15px 35px;
+    border-radius: 27px;
+    border: none;
+    transition: 0.4s all;
+}
+
+.bnt_next:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #341f97;
+    box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.3);
+}
+
+.active {
+    background-color: #341f97;
+    color: white !important;
+}
+
+.user_name,
+.user_points,
+.user_time,
+.result {
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
